@@ -257,3 +257,19 @@
   // }
   // let uniqueColors = [...new Set(array)];
   // console.log(uniqueColors);
+
+
+function getMostExpensiveVariation(products) {
+  let variations = 0;
+  for (let i = 0; i < products.length; i++) {
+    for (let j = 0; j < products[i].variations.length; j++) {
+      let variation = products[i].variations[j];
+      if(variations === 0 ||variation.price > variations.price ) {
+        variations = variation;
+      }
+    }
+    
+  }
+  return variations
+}
+console.log( getMostExpensiveVariation(products) );
