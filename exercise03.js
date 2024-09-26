@@ -253,4 +253,17 @@
   //   }
   // }
   // console.log(sum);
+
+  // function getTotalQuantity(products) {
+  //   let sum = 0;
+  //   for (let i = 0; i < products.length; i++) {
+  //     for (let j = 0; j < products[i].variations.length; j++) {
+  //       sum += products[i].variations[j].quantity;
+  //     }
+      
+  //   }
+  //   return sum;
+  // }
+  // console.log(getTotalQuantity(products));
+  
   

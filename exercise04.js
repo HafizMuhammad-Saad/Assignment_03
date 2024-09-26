@@ -258,3 +258,18 @@
 
 // }
 // console.log(trueReviews);
+
+// function getTrueStatus(products) {
+//   let trueStatus = [];
+//   for (let i = 0; i < products.length; i++) {
+//     for (let j = 0; j < products[i].reviews.length; j++) {
+//       if (products[i].reviews[j].status) {
+//         trueStatus.push(products[i].reviews[j])
+//       }
+      
+//     }
+    
+//   }
+//   return trueStatus;  
+// }
+// console.log(getTrueStatus(products));
