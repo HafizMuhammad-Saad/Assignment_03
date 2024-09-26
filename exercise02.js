@@ -258,18 +258,20 @@
   // let uniqueColors = [...new Set(array)];
   // console.log(uniqueColors);
 
+  // function getUniqueColors(products) {
+  //   let colors = [];
+  //   for(let i = 0; i < products.length; i++) {
+  //     for(let j = 0; j < products[i].variations.length; j++) {
+  //       let color = products[i].variations[j].color;
+  //       // console.log(color);
+  //       if (colors.indexOf(color) === -1 ) {
+  //         colors.push(color)
+  //     }
+  //     }
+  //   }
+  //   return colors;
+  // }
+  
+  // console.log(getUniqueColors(products))
+  
 
-function getMostExpensiveVariation(products) {
-  let variations = 0;
-  for (let i = 0; i < products.length; i++) {
-    for (let j = 0; j < products[i].variations.length; j++) {
-      let variation = products[i].variations[j];
-      if(variations === 0 ||variation.price > variations.price ) {
-        variations = variation;
-      }
-    }
-    
-  }
-  return variations
-}
-console.log( getMostExpensiveVariation(products) );
